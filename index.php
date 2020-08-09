@@ -157,6 +157,7 @@ if(isset($_POST["submit3"])){
 </pre>
 <p><a href="">make another</a></p>
 <?endif?>
+            <p style="text-align: right"><a href="https://github.com/rhiaro/argus-array">source code</a></p>
         </main>
     </body>
 </html>
