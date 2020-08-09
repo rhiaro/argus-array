@@ -1,0 +1,98 @@
+body {
+  font-family: Arial;
+}
+
+main {
+  width: 50%; margin-left: auto; margin-right: auto;
+}
+
+article {
+  margin-left: auto; margin-right: auto;
+  width: 90%;
+  min-height: 100%;
+}
+
+article p, article li {
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  line-height: 1.58;
+  font-weight: 400;
+  font-size: 21px;
+}
+article a {
+  color: inherit;
+}
+
+h1 {
+  text-align: center;
+  font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+  font-weight: 700;
+  line-height: 1.04; font-size: 40px;
+}
+h2 {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.22;
+  letter-spacing: -0.022em;
+  color: rgba(0, 0, 0, 0.44);
+}
+
+pre {
+  padding: 0.1em 0.5em 0.3em 0.7em;
+  border-left: 11px solid #ccc;
+  margin: 1.7em 0 1.7em 0.3em;
+  width: 93%;
+  max-height: 300px;
+  overflow: scroll;
+}
+/* target IE7 and IE6 */
+*:first-child+html pre {
+  padding-bottom: 2em;
+  overflow-y: hidden;
+  overflow: visible;
+  overflow-x: auto; 
+}
+* html pre { 
+  padding-bottom: 2em;
+  overflow: visible;
+  overflow-x: auto;
+}
+
+form p {
+  display: flex;
+  width: 100%;
+}
+form label {
+  /*flex-grow: 1;*/
+  /*width: 20%;*/
+  display: inline-block;
+  text-align: right;
+  padding: 0.4em;
+}
+form input[type="text"], textarea {
+  flex-grow: 1;
+}
+form input[type="submit"] {
+  flex-grow: 1;
+  padding: 0.6em;
+}
+form span label {
+  width: auto;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.44);
+  border-left: 1px solid rgba(0, 0, 0, 0.44);
+}
+.container div {
+  flex: 1;
+  padding: 0.2em;
+  text-align: center;
+}
+.container div p {
+  padding: 0; margin: 0;
+  margin-top: -0.8em;
+  cursor: pointer;
+  font-size: 2em;
+}
